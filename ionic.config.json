@@ -1,0 +1,7 @@
+{
+  "name": "MudaMeuMundo_teste",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
