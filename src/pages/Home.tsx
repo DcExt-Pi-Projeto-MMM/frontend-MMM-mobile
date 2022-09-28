@@ -7,10 +7,10 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Muda Meu Mundo</IonTitle>
+          <IonTitle class='ion-text-center'>Muda Meu Mundo</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className='ion-padding'>
+      <IonContent fullscreen className='ion-padding'>
         <IonGrid>
           <IonRow>
             <IonCol>
@@ -25,7 +25,6 @@ const Home: React.FC = () => {
               <IonItem>
                 <IonLabel position="floating">Senha</IonLabel>
                 <IonInput></IonInput>
-                <IonIcon></IonIcon>
               </IonItem>
             </IonCol>
           </IonRow>
