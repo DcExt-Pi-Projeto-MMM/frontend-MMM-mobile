@@ -7,8 +7,8 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle class='ion-text-center' color={"primary"}>Muda Meu Mundo</IonTitle>
+        <IonToolbar color={'primary'}>
+          <IonTitle class='ion-text-center' color={"light"}>Muda Meu Mundo</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen className='ion-padding'>
@@ -32,14 +32,12 @@ const Home: React.FC = () => {
         </IonGrid>
       </IonContent>
       <IonGrid>
-        <IonItem>
-          <IonButton fill="solid" color={"primary"} size="default">Cadastrar
-            <IonIcon slot='start' icon={personAdd}></IonIcon>
-          </IonButton>
-          <IonButton size='default'> Login
-            <IonIcon slot='end' icon={enter}></IonIcon>
-          </IonButton>
-        </IonItem>
+        <IonButton fill="solid" color={"primary"} size="default">Cadastrar
+          <IonIcon slot='start' icon={personAdd}></IonIcon>
+        </IonButton>
+        <IonButton size='default'> Login
+          <IonIcon slot='end' icon={enter}></IonIcon>
+        </IonButton>
       </IonGrid>
     </IonPage>
   );
