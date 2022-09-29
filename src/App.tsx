@@ -21,6 +21,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import initmenu from './pages/initmenu';
+import avisoCadastro from './pages/avisoCadastro';
 
 setupIonicReact();
 
@@ -31,6 +33,8 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Home />
         </Route>
+        <Route path="/cadastro" component={initmenu} exact />
+        <Route path="/cadastrar" component={avisoCadastro} exact />
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>

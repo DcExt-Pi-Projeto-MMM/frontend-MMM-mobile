@@ -31,12 +31,12 @@ const Home: React.FC = () => {
           </IonRow>
         </IonGrid>
       </IonContent>
-      <IonGrid>
-        <IonButton fill="solid" color={"primary"} size="default">Cadastrar
+      <IonGrid> 
+        <IonButton routerLink="/cadastro" fill="solid" color={"primary"} size="default">Cadastro
           <IonIcon slot='start' icon={personAdd}></IonIcon>
         </IonButton>
-        <IonButton size='default'> Login
-          <IonIcon slot='end' icon={enter}></IonIcon>
+        <IonButton routerLink="/login" fill='solid' size='default'color={"primary"}> Login
+          <IonIcon slot='' icon={enter}></IonIcon>
         </IonButton>
       </IonGrid>
     </IonPage>
