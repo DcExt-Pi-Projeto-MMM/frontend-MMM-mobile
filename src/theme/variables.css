@@ -3,6 +3,14 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  /** MudaMeuMundo **/
+  --ion-color-mudameumundo: #B38B6D;
+	--ion-color-mudameumundo-rgb: 179,139,109;
+	--ion-color-mudameumundo-contrast: #000000;
+	--ion-color-mudameumundo-contrast-rgb: 0,0,0;
+	--ion-color-mudameumundo-shade: #9e7a60;
+	--ion-color-mudameumundo-tint: #bb977c;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,6 +82,15 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+.ion-color-mudameumundo {
+	--ion-color-base: var(--ion-color-mudameumundo);
+	--ion-color-base-rgb: var(--ion-color-mudameumundo-rgb);
+	--ion-color-contrast: var(--ion-color-mudameumundo-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-mudameumundo-contrast-rgb);
+	--ion-color-shade: var(--ion-color-mudameumundo-shade);
+	--ion-color-tint: var(--ion-color-mudameumundo-tint);
 }
 
 @media (prefers-color-scheme: dark) {
