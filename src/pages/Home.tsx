@@ -2,8 +2,18 @@ import { IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonPage, Ion
 import ExploreContainer from '../components/ExploreContainer';
 import { star, airplane, enter, personAdd } from 'ionicons/icons';
 import './Home.css';
+import { useEffect, useState } from 'react';
 
 const Home: React.FC = () => {
+
+  const [usuario,setUsuario] = useState<string>('')
+  const [password,setPassword] = useState<string>('')
+
+  function logarUsuario(){
+    console.log(usuario,password)
+  }
+
+  
   return (
     <IonPage>
       <IonHeader>
@@ -17,7 +27,7 @@ const Home: React.FC = () => {
             <IonCol>
               <IonItem>
                 <IonLabel position="floating" color={"primary"}>Usuário</IonLabel>
-                <IonInput></IonInput>
+                <IonInput value={usuario} onIonChange={(e:any) => setUsuario(e.target.value)}></IonInput>
               </IonItem>
             </IonCol>
           </IonRow>
@@ -25,7 +35,7 @@ const Home: React.FC = () => {
             <IonCol>
               <IonItem>
                 <IonLabel position="floating" color={"primary"}>Senha</IonLabel>
-                <IonInput></IonInput>
+                <IonInput value={password} onIonChange={(e:any) => setPassword(e.target.value)}></IonInput>
               </IonItem>
             </IonCol>
           </IonRow>
@@ -35,7 +45,7 @@ const Home: React.FC = () => {
         <IonButton routerLink="/cadastro" fill="solid" color={"primary"} size="default">Cadastro
           <IonIcon slot='start' icon={personAdd}></IonIcon>
         </IonButton>
-        <IonButton routerLink="/login" fill='solid' size='default'color={"primary"}> Login
+        <IonButton onClick={logarUsuario} fill='solid' size='default'color={"primary"}> Login
           <IonIcon slot='' icon={enter}></IonIcon>
         </IonButton>
       </IonGrid>

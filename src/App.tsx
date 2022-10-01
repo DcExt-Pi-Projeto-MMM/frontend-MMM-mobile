@@ -34,6 +34,7 @@ const App: React.FC = () => (
         </Route>
         <Route path="/cadastro" component={initmenu} exact />
         <Route path="/cadastrar" component={Home} exact />
+        <Route path="/voltarCadastrar" component={Home} exact />
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
