@@ -1,4 +1,4 @@
-import { IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonPage, IonRow, IonTitle, IonToolbar, IonLabel, IonIcon, IonButton } from '@ionic/react';
+import { IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonPage, IonRow, IonTitle, IonToolbar, IonLabel, IonIcon, IonButton, IonProgressBar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { star, airplane, enter, personAdd } from 'ionicons/icons';
 import './Home.css';
@@ -19,6 +19,7 @@ const Home: React.FC = () => {
       <IonHeader>
         <IonToolbar color={'primary'}>
           <IonTitle class='ion-text-center' color={"light"}>Muda Meu Mundo</IonTitle>
+          <IonProgressBar type= "indeterminate" color={"light"}></IonProgressBar>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen className='ion-padding'>
