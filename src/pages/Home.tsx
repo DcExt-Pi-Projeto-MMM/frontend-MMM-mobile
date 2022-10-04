@@ -15,7 +15,7 @@ const Home: React.FC = () => {
 
   
   return (
-    <IonPage>
+    <IonPage>]
       <IonHeader>
         <IonToolbar color={'primary'}>
           <IonTitle class='ion-text-center' color={"light"}>Muda Meu Mundo</IonTitle>
