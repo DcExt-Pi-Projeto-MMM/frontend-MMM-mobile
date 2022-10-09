@@ -1,3 +1,4 @@
+import React from 'react';
 import { IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonPage, IonRow, IonTitle, IonToolbar, IonLabel, IonIcon, IonButton, useIonAlert, IonProgressBar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { star, airplane, enter, personAdd, chevronBackOutline, addOutline } from 'ionicons/icons';
