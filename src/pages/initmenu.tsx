@@ -7,11 +7,11 @@ import { useRef, useState } from 'react';
 const InitMenu: React.FC = () => {
 
     const [usuario,setUsuario] = useState<string>('')
-  const [password,setPassword] = useState<string>('')
+    const [password,setPassword] = useState<string>('')
 
-  function logarUsuario(){
-    console.log(usuario,password)
-  }
+    function logarUsuario(){
+        console.log(usuario,password)
+    }
     return(
         <IonPage>
             <IonHeader>

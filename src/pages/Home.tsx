@@ -15,7 +15,7 @@ const Home: React.FC = () => {
 
   
   return (
-    <IonPage>]
+    <IonPage>
       <IonHeader>
         <IonToolbar color={'primary'}>
           <IonTitle class='ion-text-center' color={"light"}>Muda Meu Mundo</IonTitle>
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
             <IonCol>
               <IonItem>
                 <IonLabel position="floating" color={"primary"}>Senha</IonLabel>
-                <IonInput value={password} onIonChange={(e:any) => setPassword(e.target.value)}></IonInput>
+                <IonInput type='password' value={password} onIonChange={(e:any) => setPassword(e.target.value)}></IonInput>
               </IonItem>
             </IonCol>
           </IonRow>
