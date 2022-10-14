@@ -3,6 +3,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import { star, airplane, enter, personAdd } from 'ionicons/icons';
 import './Home.css';
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Home: React.FC = () => {
 
