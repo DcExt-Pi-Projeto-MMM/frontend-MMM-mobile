@@ -3,7 +3,6 @@ import ExploreContainer from '../components/ExploreContainer';
 import { star, airplane, enter, personAdd } from 'ionicons/icons';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import api from '../api/dados';
 import Login from './Login';
 
 const Home: React.FC = () => {
@@ -12,7 +11,18 @@ const Home: React.FC = () => {
   const [password,setPassword] = useState<string>('')
 
   function logarUsuario(){
-   
+    return(
+      axios.post('http://localhost:3000', {
+          usuario: usuario,
+          senha: password
+      })
+      .then(function (response) {
+          console.log(response);
+      })
+      .catch(function (error) {
+          console.log('erro');
+      })
+  )
   }
 
   

@@ -1,18 +1,17 @@
 import axios from "axios";
 
 const Login = () => {
-    return(
-        axios.post('/user_login', {
-            username: 'john1904',
-            password: 'spiderman'
-        })
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
-    )
+   return(
+      axios.post('http://localhost:3000', {
+          username: usuario,
+          password: password
+      })
+      .then(function (response) {
+          console.log(response);
+      })
+      .catch(function (error) {
+          console.log('erro');
+      })
+  )
 }
-
 export default Login
