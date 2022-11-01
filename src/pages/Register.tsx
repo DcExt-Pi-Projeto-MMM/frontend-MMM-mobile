@@ -2,17 +2,16 @@ import React from 'react';
 import { IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonPage, IonRow, IonTitle, IonToolbar, IonLabel, IonIcon, IonButton, useIonAlert, IonProgressBar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { star, airplane, enter, personAdd, chevronBackOutline, addOutline } from 'ionicons/icons';
-import './initmenu.css';
 import { useRef, useState } from 'react';
 
 const InitMenu: React.FC = () => {
 
     const [usuario,setUsuario] = useState<string>('')
-  const [password,setPassword] = useState<string>('')
+    const [password,setPassword] = useState<string>('')
 
-  function logarUsuario(){
-    console.log(usuario,password)
-  }
+    function logarUsuario(){
+        console.log(usuario,password)
+    }
     return(
         <IonPage>
             <IonHeader>
